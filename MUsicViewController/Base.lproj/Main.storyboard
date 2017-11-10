@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Italic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gz2-Vz-pfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="5mo-ob-GTX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="top" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beg" translatesAutoresizingMaskIntoConstraints="NO" id="n4X-Iq-jfO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你还没有播放节目" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3VI-CE-pd6">
+                                <rect key="frame" x="115.5" y="283" width="144" height="21.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去选择吧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0j-gT-d0n">
+                                <rect key="frame" x="153.5" y="323.5" width="68" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l0j-gT-d0n" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="58k-qu-khk"/>
+                            <constraint firstItem="n4X-Iq-jfO" firstAttribute="top" secondItem="Gz2-Vz-pfr" secondAttribute="bottom" constant="-20" id="E1j-Oy-2Te"/>
+                            <constraint firstItem="n4X-Iq-jfO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VyN-Jv-pnQ"/>
+                            <constraint firstItem="3VI-CE-pd6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="axw-9K-HZB"/>
+                            <constraint firstItem="3VI-CE-pd6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cm8-gD-A5V"/>
+                            <constraint firstItem="5mo-ob-GTX" firstAttribute="top" secondItem="n4X-Iq-jfO" secondAttribute="bottom" id="sPn-MW-Evq"/>
+                            <constraint firstAttribute="trailing" secondItem="n4X-Iq-jfO" secondAttribute="trailing" id="tZY-49-JmY"/>
+                            <constraint firstItem="l0j-gT-d0n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xE0-jo-tZv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleHeader1" destination="3VI-CE-pd6" id="ggh-Ql-YmN"/>
+                        <outlet property="titleHeader2" destination="l0j-gT-d0n" id="I6F-Hw-769"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="58.920539730134934"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="beg" width="1288" height="1924"/>
+    </resources>
+</document>
